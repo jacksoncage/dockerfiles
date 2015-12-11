@@ -1,2 +1,3 @@
 # dockerfiles
-All dockerfiles out in the blue 
+
+Combined repo for all collected dockerfiles that I use regularly.
