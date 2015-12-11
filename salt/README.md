@@ -7,13 +7,6 @@ Image includes both salt-master, salt-minion, salt-api and also salt-cloud to be
 
 Salt master is auto accepting all minions.
 
-## Salt versions
-
-### Supported tags and respective `Dockerfile` links
-
- - **latest** [(2014.7.2+ds-1trusty2/Dockerfile)](https://github.com/jacksoncage/salt-docker/blob/master/Dockerfile)
- - **2014.7.2** [(2014.7.2+ds-1trusty2/Dockerfile)](https://github.com/jacksoncage/salt-docker/blob/version/2014.7.2/Dockerfile)
-
 ## Get it running
 
 ### Salt master/minon with docker run

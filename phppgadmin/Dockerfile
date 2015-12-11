@@ -8,8 +8,6 @@
 #       -v /etc/localtime:/etc/localtime \
 #       jacksoncage/phppgadmin
 
-docker run -i -d -p 80  jacksoncage/
-
 FROM        debian:jessie
 MAINTAINER  Love Nyberg "love.nyberg@lovemusic.se"
 ENV         REFRESHED_AT 2015-12-11

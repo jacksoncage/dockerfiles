@@ -11,7 +11,7 @@ ENV         REFRESHED_AT 2015-12-11
 
 # Update the package repository and install memcached
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get upgrade -y %% \
+    DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y wget curl memcached
 
 # Clean image
