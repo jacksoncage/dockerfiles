@@ -5,7 +5,7 @@
 #       -v /etc/localtime:/etc/localtime \
 #       jacksoncage/node-demo
 
-FROM        jacksoncage:node
+FROM        jacksoncage/node
 MAINTAINER  Love Nyberg "love.nyberg@lovemusic.se"
 ENV         REFRESHED_AT 2015-12-11
 
