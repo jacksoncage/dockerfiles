@@ -21,7 +21,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq && \
 RUN echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.org.list && \
   echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.org.list && \
   wget -O- http://www.dotdeb.org/dotdeb.gpg | apt-key add - && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y \
   php5-cli php5 php5-mcrypt php5-curl php5-pgsql postgresql-contrib phppgadmin && \
   curl -sS https://getcomposer.org/installer | php && \
   mv composer.phar /usr/local/bin/composer && \
