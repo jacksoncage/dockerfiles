@@ -18,9 +18,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yqq wget curl psmisc
 
 # Install Dockyard
-RUN curl -sS https://raw.github.com/dynport/dockyard/master/dockyard \
-    -o /usr/local/bin/dockyard && \
-    chmod 0755 /usr/local/bin/dockyard
+RUN curl -sSL -o /usr/local/bin/dockyard https://raw.github.com/dynport/dockyard/master/dockyard && \
+    chmod 0755 /usr/local/bin/dockyard && \
     dockyard install postgresql 9.2.4 && \
     useradd postgres
 
