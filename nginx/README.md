@@ -1,5 +1,6 @@
 Automated build of nginx with Docker
 ===========
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/nginx/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/nginx)
 
 ### Nginx environment variables
 Nginx will make of the following environment variables.

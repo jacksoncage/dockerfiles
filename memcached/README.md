@@ -1,7 +1,6 @@
 Automated build of Memcached with Docker
 ===========
-
- > Based on (Debian official repository)[https://index.docker.io/_/debian/]
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/memcached/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/memcached)
 
 ### Use the pre built image
 The pre built image can be downloaded using docker directly. After that you do not need to use this command again, you will have the image on your machine.

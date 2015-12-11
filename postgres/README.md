@@ -1,6 +1,8 @@
 Automated build of Postgres with Docker
 ===========
 
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/postgres/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/postgres)
+
 ### Postgres super user ###
 Inserts a superuser in the database. The start script will use two environment variables to set `USERNAME` and `PASSWORD`.
 

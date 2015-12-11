@@ -1,7 +1,6 @@
 Automated build of Apache with Docker
 ===========
-
- - Master are based on [Debian official repository](https://index.docker.io/_/debian/)
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/apache/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/apache)
 
 ### Apache environment variables
 Apache will make of the following environment variables.

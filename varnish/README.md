@@ -1,5 +1,6 @@
 Automated build of Varnish with Docker
 ===========
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/varnish/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/varnish) 
 
 ### Varnish environment variables
 Varnish will make of the following environment variables.

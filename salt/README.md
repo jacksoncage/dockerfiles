@@ -1,6 +1,8 @@
 Easy Salt testing with Docker
 ===========
 
+[![Docker Repository on Quay](https://quay.io/repository/jacksoncage/salt/status "Docker Repository on Quay")](https://quay.io/repository/jacksoncage/salt)
+
 This repo provides a Salt setup with one master and one (or multiple) minions to be able to test and work with states, pillars and all other salt functionality. By using docker it's easy to reproduce and test you code.
 
 Image includes both salt-master, salt-minion, salt-api and also salt-cloud to be able to test and troubleshoot all things salt. `SALT_USE` environment variable is used to determent if container should be running as master or minion.
