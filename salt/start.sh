@@ -12,6 +12,8 @@ echo $SALT_NAME > /etc/salt/minion_id
 # If salt master also start minion in background
 if [ $SALT_USE == "master" ]; then
   echo "INFO: Starting salt-minion and auto connect to salt-master"
+  echo "master: $SALT_NAME
+log_level: $LOG_LEVEL" > /etc/salt/minion
   service salt-minion start
 fi
 
