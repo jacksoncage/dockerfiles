@@ -22,6 +22,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yqq \
     wget \
     curl \
+    vim \
     dnsutils \
     python-pip \
     python-dev \
