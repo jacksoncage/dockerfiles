@@ -10,7 +10,7 @@
 
 FROM        debian:jessie
 MAINTAINER  Love Nyberg "love.nyberg@lovemusic.se"
-ENV         REFRESHED_AT 2015-12-11
+ENV         REFRESHED_AT 2016-07-22
 
 # Update the package repository
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq && \
@@ -31,7 +31,9 @@ RUN echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/
 
 # Fix phppgadmin
 COPY ./phppgadmin.conf /etc/apache2/conf.d/phppgadmin
+COPY ./phppgadmin.conf /etc/apache2/conf-available/phppgadmin.conf
 COPY ./config.inc.php /usr/share/phppgadmin/conf/config.inc.php
+COPY ./config.inc.php /etc/phppgadmin/config.inc.php
 RUN sed -i 's/variables_order = "GPCS"/variables_order = "EGPCS"/g' /etc/php5/apache2/php.ini
 
 # Clean image
