@@ -35,6 +35,8 @@ COPY ./phppgadmin.conf /etc/apache2/conf-available/phppgadmin.conf
 COPY ./config.inc.php /usr/share/phppgadmin/conf/config.inc.php
 COPY ./config.inc.php /etc/phppgadmin/config.inc.php
 RUN sed -i 's/variables_order = "GPCS"/variables_order = "EGPCS"/g' /etc/php5/apache2/php.ini
+# Fix phppgadmin's code which produces too many errors in apache's error.log
+RUN sed -i "s/\$plugins = \$conf\['plugins'\]\;/\$plugins = \!empty(\$conf\['plugins'\])\?\$conf\['plugins'\]:\[\]\;/g" /usr/share/phppgadmin/classes/PluginManager.php
 
 # Clean image
 RUN apt-get -yqq clean && \
