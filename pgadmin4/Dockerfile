@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Anton Rymkus <anton.rymkus@emc.com>
+MAINTAINER Anton Rymkus <rymkus@gmail.com>
 
 ENV PGADMIN_VERSION=1.0 \
     PGADMIN_SUFFIX=ReleaseCandidate1 \
