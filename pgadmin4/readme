@@ -1,0 +1,10 @@
+'''
+IMPORTANT: NOT FOR PRODUCTION USE!
+authorization is disabled (pgadmin runs in the "desktop" mode)
+
+Dockerfile and requirements for run the pgadmin4 release candidate in docker container.
+Based on Alpine Linux image to lower disk usage as possible.
+
+See https://www.pgadmin.org/
+
+'''
