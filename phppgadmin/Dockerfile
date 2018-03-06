@@ -53,6 +53,6 @@ ENV POSTGRES_DEFAULTDB defaultdb
 ENV POSTGRES_HOST localhost
 ENV POSTGRES_PORT 5432
 
-EXPOSE 80 443
+EXPOSE 80
 COPY start.sh /start.sh
 CMD ["bash", "start.sh"]
