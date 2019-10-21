@@ -60,4 +60,4 @@ VOLUME ["/etc/salt", "/var/cache/salt", "/var/logs/salt", "/srv/salt"]
 WORKDIR /srv/salt
 EXPOSE 4505 4506 8080 8081
 COPY start.sh /start.sh
-CMD ["bash", "start.sh"]
+CMD ["bash", "/start.sh"]
